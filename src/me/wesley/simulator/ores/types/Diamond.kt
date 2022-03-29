@@ -7,6 +7,7 @@ import me.wesley.simulator.ores.abstraction.Ore
 class Diamond : Ore("DiamondOre", arrayOf(DiamondPickaxe())) {
 
     override fun breakOre(player: Player) {
+        checkUsability(player)
         println("You broke a $oreName")
     }
 

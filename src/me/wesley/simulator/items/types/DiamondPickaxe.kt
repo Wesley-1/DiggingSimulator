@@ -11,6 +11,7 @@ import kotlin.random.Random
 class DiamondPickaxe : Item("DiamondPickaxe", 200.0) {
 
     override fun perform(player: Player) {
+
         val random = Random.nextInt(100)
 
         if (random <= 10) {
